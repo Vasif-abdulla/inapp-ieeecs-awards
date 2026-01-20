@@ -1,25 +1,25 @@
 import './page.css';
 import './responsive-fixes.css';
-import { Award, Users, Building2, Trophy, Calendar, Phone, Mail } from 'lucide-react';
+import { Award, Users, Building2, Trophy, Calendar, Phone, Mail, FileText, Medal } from 'lucide-react';
 import ImageSlider from './components/image-slider';
 export default function Home() {
   return (
     <div style={styles.container}>
       <section style={styles.hero}>
-         <div style={styles.logoRow} className="logoRow">
-            {/* <div style={styles.logoContainer} className="logoContainer">
+        <div style={styles.logoRow} className="logoRow">
+          {/* <div style={styles.logoContainer} className="logoContainer">
               <img src="/inapp-logo12.png" alt="InApp Logo" style={styles.inappLogo} className="inapp-logo"/>
             </div> */}
-            <div style={styles.logoContainer}>
-              <img src="/logo1.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo"/>
-            </div>
-         </div>
+          <div style={styles.logoContainer}>
+            <img src="/logo1.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo" />
+          </div>
+        </div>
 
-          {/* <img src="/heading.png" alt="Heading Text" style={styles.headingImage} /> */}
-       
+        {/* <img src="/heading.png" alt="Heading Text" style={styles.headingImage} /> */}
+
         <h1 style={styles.heading} className="responsiveHeading">InApp - IEEE CS STUDENT PROJECT AWARDS</h1>
         <p style={styles.subheading} className="responsiveSubheading">Inspiring New Solutions, Propelling Innovation, Realizing Excellence</p>
-       
+
         {/* <a
           href="https://forms.gle/Yk1X268gtwRjbgrQ8"
           target="_blank"
@@ -29,8 +29,8 @@ export default function Home() {
           Apply Now
         </a> */}
       </section>
-      
-    <section style={styles.aboutSection} id="about">
+
+      <section style={styles.aboutSection} id="about">
         <div style={styles.sectionContainer}>
           <div style={styles.sectionHeader}>
             <div style={styles.sectionBadge}>About</div>
@@ -51,7 +51,7 @@ export default function Home() {
               <div style={styles.aboutCardContent}>
                 <h3 style={styles.aboutCardTitle}> InApp </h3>
                 <p style={styles.aboutCardText}>Since 2000, InApp has been a trusted end‑to‑end software development partner, delivering cutting‑edge technology solutions to clients around the globe. With a team of over 400 seasoned engineers, InApp has completed more than 1,500 projects for upwards of 700 organizations, driving digital transformation across industries. From crafting bespoke desktop and mobile applications to implementing cloud‑native architectures, DevOps pipelines, big‑data analytics, IoT integrations, blockchain innovations, and immersive AR/VR experiences, InApp brings every stage of the software lifecycle under one roof - whether launching a brand‑new product or modernizing a legacy system.</p>
-                
+
               </div>
             </div>
 
@@ -63,8 +63,8 @@ export default function Home() {
               <div style={styles.aboutCardContent}>
                 <h3 style={styles.aboutCardTitle}>InApp - IEEE CS Student Project Awards</h3>
                 <p style={styles.aboutCardText}>
-                                    The InApp Student Project Awards, previously organized in collaboration with CSI, have partnered with the IEEE Computer Society Kerala Chapter to celebrate outstanding student achievements in software development across India. This award offers an engaging, supportive platform for teams to present fully realized projects that address real‑world challenges. Each submission is carefully evaluated by a panel of industry experts, ensuring that outstanding technical rigor, inventive thinking, and real‑world impact receive the spotlight they deserve. More than a ceremony, the award empowers the next generation of technocrats to push their limits, collaborate across disciplines, and emerge as future leaders.</p>
-                
+                  The InApp Student Project Awards, previously organized in collaboration with CSI, have partnered with the IEEE Computer Society Kerala Chapter to celebrate outstanding student achievements in software development across India. This award offers an engaging, supportive platform for teams to present fully realized projects that address real‑world challenges. Each submission is carefully evaluated by a panel of industry experts, ensuring that outstanding technical rigor, inventive thinking, and real‑world impact receive the spotlight they deserve. More than a ceremony, the award empowers the next generation of technocrats to push their limits, collaborate across disciplines, and emerge as future leaders.</p>
+
 
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </section>
 
- <section id="awards" style={styles.awardsSection}>
+      <section id="awards" style={styles.awardsSection}>
         <div style={styles.sectionContainer}>
           <div style={styles.sectionHeader}>
             <div style={styles.sectionBadge}>Awards</div>
@@ -153,44 +153,52 @@ export default function Home() {
             {/* Award Rules Card */}
             <div style={styles.awardsCard} className="awards-card">
               <div style={styles.awardsCardHeader}>
-                <Trophy size={24} color="#CC232E" />
+                <div style={styles.iconContainer}>
+                  <FileText size={24} color="white" />
+                </div>
                 <h3 style={styles.awardsCardTitle}>Terms and Conditions</h3>
               </div>
               <div style={styles.awardsCardContent}>
-  <p><strong>1. Eligibility</strong><br/>
-  Participation is open to individuals who graduate in calendar year 2025, from any undergraduate or postgraduate program. Each entry must include a software component; submissions lacking clear software functionality will be disqualified.</p>
+                <p><strong>1. Eligibility</strong><br />
+                  Participation is open to individuals who graduate in calendar year 2026, from any undergraduate or postgraduate program. Each entry must include a software component; submissions lacking clear software functionality will be disqualified.</p>
 
-<p><strong>2. Evaluation Process</strong><br/>
-  All valid entries will undergo expert review by a panel appointed by the Organizing Committee. The initial assessment will consider innovation, technical merit, feasibility, and overall impact. Shortlisted teams will be notified exclusively via the email address provided at registration and must present a live demonstration - either virtually or in person, as specified by the organizers. The panel, comprising seasoned technologists and industry leaders, may conduct further rounds of evaluation if deemed necessary. All decisions on shortlisting, finalist status, and awards are final and binding.</p>
+                <p><strong>2. Evaluation Process</strong><br />
+                  All valid entries will undergo expert review by a panel appointed by the Organizing Committee. The initial assessment will consider innovation, technical merit, feasibility, and overall impact. Shortlisted teams will be notified exclusively via the email address provided at registration and must present a live demonstration - either virtually or in person, as specified by the organizers. The panel, comprising seasoned technologists and industry leaders, may conduct further rounds of evaluation if deemed necessary. All decisions on shortlisting, finalist status, and awards are final and binding.</p>
 
-<p><strong>3. Intellectual Property</strong><br/>
-  Project teams retain full ownership of all intellectual property rights in their submissions. By entering, each team grants the organizers a non‑exclusive, royalty‑free, perpetual license to reproduce and display submission materials for non‑commercial promotional and marketing purposes only. No other rights - including commercialization, sublicensing, or modification - are conveyed.</p>
+                <p><strong>3. Intellectual Property</strong><br />
+                  Project teams retain full ownership of all intellectual property rights in their submissions. By entering, each team grants the organizers a non‑exclusive, royalty‑free, perpetual license to reproduce and display submission materials for non‑commercial promotional and marketing purposes only. No other rights - including commercialization, sublicensing, or modification - are conveyed.</p>
 
-<p><strong>4. General</strong><br/>
-  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition.</p>
+                <p><strong>4. General</strong><br />
+                  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition.</p>
 
 
-</div>
+              </div>
 
             </div>
-            </div>
-         <div style={styles.awardsGrid1} className="awards-grid">
+          </div>
+          <div style={styles.awardsGrid1} className="awards-grid">
             {/* Prizes Card */}
             <div style={styles.awardsCard} className="awards-card">
               <div style={styles.awardsCardHeader}>
-                <Award size={24} color="#CC232E" />
+                <div style={styles.iconContainer}>
+                  <Trophy size={24} color="white" />
+                </div>
                 <h3 style={styles.awardsCardTitle}>Prizes</h3>
               </div>
               <div style={styles.awardsCardContent}>
                 <div style={styles.prizeItem}>
-                  <div style={styles.prizeIcon}>🥇</div>
+                  <div style={styles.prizeIcon}>
+                    <Trophy size={28} color="#FFD700" />
+                  </div>
                   <div>
                     <h4 style={styles.prizeTitle}>First Prize</h4>
                     <p style={styles.prizeAmount}>Award Instrument + ₹50,000</p>
                   </div>
                 </div>
                 <div style={styles.prizeItem}>
-                  <div style={styles.prizeIcon}>🥈</div>
+                  <div style={styles.prizeIcon}>
+                    <Trophy size={28} color="#A9A9A9" />
+                  </div>
                   <div>
                     <h4 style={styles.prizeTitle}>Consolation Prize</h4>
                     <p style={styles.prizeAmount}>Award Instrument + ₹25,000</p>
@@ -203,66 +211,66 @@ export default function Home() {
                     Placement Opportunity for All Winners
                   </p>
                 </div>
-                
-              </div>
-            </div>
-          
 
-          {/* Timeline */}
-          <div style={styles.timelineCard} className="timeline-card">
-            <div style={styles.timelineHeader}>
-              <Calendar size={24} color="#CC232E" />
-              <h3 style={styles.timelineTitle}>Important Dates</h3>
+              </div>
             </div>
-            <div style={styles.timelineContent}>
-              <div style={styles.timelineItem}>
-                <div style={styles.timelineDot}></div>
-                <div style={styles.timelineInfo}>
-                  <h4 style={styles.timelineEventTitle}>Call for Abstracts</h4>
-                  <p style={styles.timelineDate}>17th June, 2025</p>
-                </div>
+
+
+            {/* Timeline */}
+            <div style={styles.timelineCard} className="timeline-card">
+              <div style={styles.timelineHeader}>
+                <Calendar size={24} color="#CC232E" />
+                <h3 style={styles.timelineTitle}>Important Dates</h3>
               </div>
-              <div style={styles.timelineItem}>
-                <div style={styles.timelineDot}></div>
-                <div style={styles.timelineInfo}>
-                  <h4 style={styles.timelineEventTitle}>Submission Deadline</h4>
-                  <p style={styles.timelineDate}>10th July, 2025</p>
+              <div style={styles.timelineContent}>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>Call for Abstracts</h4>
+                    <p style={styles.timelineDate}>Coming Soon</p>
+                  </div>
                 </div>
-              </div>
-               <div style={styles.timelineItem}>
-                <div style={styles.timelineDot}></div>
-                <div style={styles.timelineInfo}>
-                  <h4 style={styles.timelineEventTitle}>Initial Evaluation & Scrutiny</h4>
-                  <p style={styles.timelineDate}>July 2025</p>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>Submission Deadline</h4>
+                    <p style={styles.timelineDate}>Coming Soon</p>
+                  </div>
                 </div>
-              </div>
-               <div style={styles.timelineItem}>
-                <div style={styles.timelineDot}></div>
-                <div style={styles.timelineInfo}>
-                  <h4 style={styles.timelineEventTitle}>⁠Final Evaluation</h4>
-                  <p style={styles.timelineDate}>August 2025</p>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>Initial Evaluation & Scrutiny</h4>
+                    <p style={styles.timelineDate}>Coming Soon</p>
+                  </div>
                 </div>
-              </div>
-              <div style={styles.timelineItem}>
-                <div style={styles.timelineDot}></div>
-                <div style={styles.timelineInfo}>
-                  <h4 style={styles.timelineEventTitle}>Result Announcement</h4>
-                  <p style={styles.timelineDate}>2nd September, 2025</p>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>⁠Final Evaluation</h4>
+                    <p style={styles.timelineDate}>Coming Soon</p>
+                  </div>
+                </div>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>Result Announcement</h4>
+                    <p style={styles.timelineDate}>Coming Soon</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </section>
-       <section id="contact" style={styles.contactSection}>
+      <section id="contact" style={styles.contactSection}>
         <div style={styles.sectionContainer}>
           <div style={styles.sectionHeader}>
             <div style={styles.sectionBadge}>Contact Us</div>
             <h2 style={styles.sectionTitle1}> Stuck somewhere? Curious about the next step?
               Reach out — we’re here to ensure nothing holds you back</h2>
             <p style={styles.sectionSubtitle}>
-              
+
             </p>
           </div>
 
@@ -299,10 +307,10 @@ export default function Home() {
       </section>
 
       <footer style={styles.footer}>
-        <p>©️2025 InApp - IEEE CS Student Project Awards. All rights reserved.</p>
+        <p>©️2026 InApp - IEEE CS Student Project Awards. All rights reserved.</p>
       </footer>
     </div>
-    
+
   );
 }
 
@@ -325,7 +333,7 @@ const styles = {
     padding: '0 20px',
   },
 
-    logo: {
+  logo: {
     maxWidth: '100%',
     maxHeight: '100%',
     objectFit: 'contain',
@@ -333,7 +341,7 @@ const styles = {
   inappLogo: {
     maxWidth: '320%',
     maxHeight: '320%',
-    
+
     objectFit: 'contain',
   } as React.CSSProperties,
   ieeecsLogo: {
@@ -341,15 +349,15 @@ const styles = {
     maxHeight: '300%',
     objectFit: 'contain',
   } as React.CSSProperties,
-  
+
   logoContainer: {
-  width: '300px',
-  height: '150px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  margin: '0 -25px',
-},
+    width: '300px',
+    height: '150px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 -25px',
+  },
   logoRow: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -373,7 +381,7 @@ const styles = {
     fontSize: '1.4rem',
     marginBottom: '20px',
   },
-    headingImage: {
+  headingImage: {
     width: '100%', // adjust as needed
     maxWidth: '1000px',
     marginBottom: '10px',
@@ -390,7 +398,7 @@ const styles = {
     boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
   },
 
- sectionContainer: {
+  sectionContainer: {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '0 20px',
@@ -551,7 +559,7 @@ const styles = {
     gap: '2rem',
     marginBottom: '3rem',
   },
-   awardsGrid1: {
+  awardsGrid1: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
     gap: '2rem',
@@ -672,7 +680,7 @@ const styles = {
     margin: '0 0 0.5rem 0',
   },
   timelineDate: {
-   fontSize: '1rem',
+    fontSize: '1rem',
     color: '#CC232E',
     fontWeight: '600',
     margin: 0,
@@ -745,6 +753,15 @@ const styles = {
     fontWeight: '500',
   },
 
+  iconContainer: {
+    width: '50px',
+    height: '50px',
+    backgroundColor: '#CC232E',
+    borderRadius: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   footer: {
     backgroundColor: '#222',
     color: '#fff',

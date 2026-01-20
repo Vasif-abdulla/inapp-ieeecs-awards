@@ -6,43 +6,58 @@
     gap: 24px !important;
     align-items: stretch !important;
   }
-  .historyStats, .history-stats {
+
+  .historyStats,
+  .history-stats {
     flex-direction: row !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
     gap: 12px !important;
     width: 100% !important;
   }
-  .statCard, .stat-card {
+
+  .statCard,
+  .stat-card {
     min-width: 120px !important;
     flex: 1 1 40% !important;
     margin: 0 0 12px 0 !important;
     text-align: center !important;
   }
-  .historyText, .history-text {
+
+  .historyText,
+  .history-text {
     width: 100% !important;
     padding: 0 !important;
   }
+
   .awards-grid {
     flex-direction: column !important;
     display: flex !important;
     gap: 24px !important;
   }
+
   .awards-card {
     width: 100% !important;
     margin-bottom: 16px !important;
   }
+
   .timeline-card {
     width: 100% !important;
     margin-top: 24px !important;
   }
-  .sectionHeader, .section-header {
+
+  .sectionHeader,
+  .section-header {
     text-align: center !important;
   }
-  .sectionTitle, .section-title {
+
+  .sectionTitle,
+  .section-title {
     font-size: 1.5rem !important;
   }
-  .sectionSubtitle, .section-subtitle {
+
+  .sectionSubtitle,
+  .section-subtitle {
     font-size: 1rem !important;
   }
 }
@@ -55,7 +70,9 @@
     gap: 20px !important;
     margin-top: 2rem !important;
   }
-  .historyStats, .history-stats {
+
+  .historyStats,
+  .history-stats {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -63,25 +80,35 @@
     justify-content: center !important;
     width: 100% !important;
   }
-  .statCard, .stat-card {
+
+  .statCard,
+  .stat-card {
     min-width: 120px !important;
     flex: 1 1 40% !important;
     margin: 0 0 10px 0 !important;
     text-align: center !important;
     padding: 1rem !important;
   }
-  .historyText, .history-text {
+
+  .historyText,
+  .history-text {
     width: 100% !important;
     padding: 0 !important;
   }
-  .sectionHeader, .section-header {
+
+  .sectionHeader,
+  .section-header {
     text-align: center !important;
     margin-bottom: 2rem !important;
   }
-  .sectionTitle, .section-title {
+
+  .sectionTitle,
+  .section-title {
     font-size: 2rem !important;
   }
-  .sectionSubtitle, .section-subtitle {
+
+  .sectionSubtitle,
+  .section-subtitle {
     font-size: 1rem !important;
   }
 }
@@ -95,7 +122,9 @@
     margin-top: 2rem !important;
     align-items: stretch !important;
   }
-  .historyStats, .history-stats {
+
+  .historyStats,
+  .history-stats {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -103,7 +132,9 @@
     justify-content: center !important;
     width: 100% !important;
   }
-  .statCard, .stat-card {
+
+  .statCard,
+  .stat-card {
     min-width: 120px !important;
     flex: 1 1 40% !important;
     margin: 0 0 1rem 0 !important;
@@ -111,18 +142,26 @@
     padding: 1rem !important;
     font-size: 1rem !important;
   }
-  .historyText, .history-text {
+
+  .historyText,
+  .history-text {
     width: 100% !important;
     padding: 0 !important;
   }
-  .sectionHeader, .section-header {
+
+  .sectionHeader,
+  .section-header {
     text-align: center !important;
     margin-bottom: 2rem !important;
   }
-  .sectionTitle, .section-title {
+
+  .sectionTitle,
+  .section-title {
     font-size: 2rem !important;
   }
-  .sectionSubtitle, .section-subtitle {
+
+  .sectionSubtitle,
+  .section-subtitle {
     font-size: 1rem !important;
   }
 }
@@ -138,7 +177,9 @@
     padding-right: 0 !important;
     box-sizing: border-box !important;
   }
-  .historyText, .history-text {
+
+  .historyText,
+  .history-text {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
@@ -146,7 +187,9 @@
     width: 100% !important;
     box-sizing: border-box !important;
   }
-  .sectionContainer, .section-container {
+
+  .sectionContainer,
+  .section-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
@@ -167,64 +210,90 @@
     align-items: stretch !important;
     width: 100% !important;
   }
-  .historyStats, .history-stats {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    gap: 0.7rem !important;
-    justify-content: center !important;
+
+  .historyStats,
+  .history-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
     width: 100% !important;
+    justify-content: center !important;
   }
-  .statCard, .stat-card {
-    min-width: 110px !important;
-    flex: 1 1 45% !important;
-    margin: 0 0 0.7rem 0 !important;
+
+  .statCard,
+  .stat-card {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
     text-align: center !important;
-    padding: 0.7rem !important;
+    padding: 1rem !important;
     font-size: 0.98rem !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
-  .historyText, .history-text {
+
+  .historyText,
+  .history-text {
     width: 100% !important;
     padding: 0 !important;
   }
-  .sectionHeader, .section-header {
+
+  .sectionHeader,
+  .section-header {
     text-align: center !important;
     margin-bottom: 1.5rem !important;
   }
-  .sectionTitle, .section-title {
+
+  .sectionTitle,
+  .section-title {
     font-size: 1.3rem !important;
   }
-  .sectionSubtitle, .section-subtitle {
+
+  .sectionSubtitle,
+  .section-subtitle {
     font-size: 0.98rem !important;
   }
-  .historyParagraph, .history-paragraph {
+
+  .historyParagraph,
+  .history-paragraph {
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1rem !important;
   }
+
   .awards-grid {
     display: flex !important;
     flex-direction: column !important;
     gap: 1.5rem !important;
     width: 100% !important;
   }
+
   .awards-card {
     width: 100% !important;
     margin-bottom: 1rem !important;
     box-sizing: border-box !important;
   }
-  .prizeItem, .prize-item {
+
+  .prizeItem,
+  .prize-item {
     flex-direction: row !important;
     align-items: center !important;
     gap: 0.7rem !important;
     padding: 0.7rem !important;
     font-size: 0.98rem !important;
   }
-  .prizeIcon, .prize-icon {
+
+  .prizeIcon,
+  .prize-icon {
     font-size: 1.3rem !important;
   }
-  .bonusCard, .bonus-card {
+
+  .bonusCard,
+  .bonus-card {
     padding: 0.7rem !important;
     font-size: 0.98rem !important;
   }
@@ -235,26 +304,38 @@
     gap: 0.7rem !important;
     margin-top: 0.7rem !important;
   }
-  .statCard, .stat-card {
+
+  .statCard,
+  .stat-card {
     min-width: 90px !important;
     font-size: 0.9rem !important;
     padding: 0.5rem !important;
   }
-  .sectionTitle, .section-title {
+
+  .sectionTitle,
+  .section-title {
     font-size: 1.1rem !important;
   }
-  .historyParagraph, .history-paragraph {
+
+  .historyParagraph,
+  .history-paragraph {
     font-size: 0.9rem !important;
     line-height: 1.3 !important;
   }
-  .prizeItem, .prize-item {
+
+  .prizeItem,
+  .prize-item {
     font-size: 0.9rem !important;
     padding: 0.5rem !important;
   }
-  .prizeIcon, .prize-icon {
+
+  .prizeIcon,
+  .prize-icon {
     font-size: 1.1rem !important;
   }
-  .bonusCard, .bonus-card {
+
+  .bonusCard,
+  .bonus-card {
     font-size: 0.9rem !important;
     padding: 0.5rem !important;
   }
@@ -270,32 +351,35 @@
     margin-right: 0 !important;
     box-sizing: border-box !important;
   }
+
   .history-paragraph {
     font-size: 1rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1rem !important;
     text-align: left !important;
   }
+
   .history-link {
     margin-top: 1.2rem !important;
     text-align: left !important;
   }
+
   .history-link-btn {
     font-size: 1rem !important;
     padding: 10px 18px !important;
     border-radius: 7px !important;
   }
 }
+
 @media (max-width: 600px) {
   .history-paragraph {
     font-size: 0.95rem !important;
     line-height: 1.3 !important;
   }
+
   .history-link-btn {
     font-size: 0.95rem !important;
     padding: 8px 12px !important;
     border-radius: 6px !important;
   }
 }
-
-

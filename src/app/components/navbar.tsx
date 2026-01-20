@@ -68,7 +68,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           style={{
             ...styles.hamburger,
-            color: scrolled ? 'black' : 'white'
+            color: (scrolled || menuOpen) ? '#1a1a1a' : 'white'
           }}
           aria-label="Toggle menu"
         >
@@ -84,7 +84,12 @@ export default function Navbar() {
               : 'mobile-closed'
             : 'desktop-menu'
         }
-        style={styles.navLinks}
+        style={{
+          ...styles.navLinks,
+          display: isMobile && !menuOpen ? 'none' : 'flex',
+          flexDirection: isMobile ? 'column' : 'row',
+          backgroundColor: isMobile ? '#ffffff' : 'transparent',
+        }}
       >
         <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
@@ -127,20 +132,21 @@ export default function Navbar() {
           display: flex;
           flex-direction: column;
           position: absolute;
-          top: 60px;
+          top: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.85);
-          padding: 20px 0;
-          gap: 20px;
+          height: 100vh;
+          background: #ffffff;
+          padding: 150px 0 80px 0;
+          gap: 35px;
           align-items: center;
           z-index: 1000;
         }
         ul.mobile-open a {
-          color: white;
+          color: #1a1a1a;
           font-size: 1.2rem;
           font-weight: 600;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+          text-shadow: none;
         }
         ul.mobile-open a:hover {
           color: #CC232E;
@@ -181,6 +187,7 @@ const styles = {
     padding: 0,
     fontWeight: '500',
     gap: '25px',
+    alignItems: 'center',
   },
   hamburger: {
     position: 'absolute' as const,
