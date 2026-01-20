@@ -20,14 +20,15 @@ export default function Home() {
         <h1 style={styles.heading} className="responsiveHeading">InApp - IEEE CS STUDENT PROJECT AWARDS</h1>
         <p style={styles.subheading} className="responsiveSubheading">Inspiring New Solutions, Propelling Innovation, Realizing Excellence</p>
 
-        {/* <a
-          href="https://forms.gle/Yk1X268gtwRjbgrQ8"
+        <a
+          href=""
           target="_blank"
           rel="noopener noreferrer"
-          style={styles.button}
+          className="apply-button"
         >
           Apply Now
-        </a> */}
+        </a>
+
       </section>
 
       <section style={styles.aboutSection} id="about">

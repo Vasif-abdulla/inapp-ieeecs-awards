@@ -60,7 +60,8 @@ export default function Navbar() {
         ...styles.navbar,
         top: notificationVisible ? '50px' : '0px',
         backgroundColor: scrolled ? '#ffffff' : 'transparent',
-        boxShadow: scrolled ? '0 2px 6px rgba(0,0,0,0.1)' : 'none'
+        boxShadow: scrolled ? '0 2px 6px rgba(0,0,0,0.1)' : 'none',
+        padding: isMobile ? '30px 30px' : '20px 30px',
       }}
     >
       {isMobile && (
@@ -135,12 +136,21 @@ export default function Navbar() {
           top: 0;
           left: 0;
           width: 100%;
-          height: 100vh;
+          height: auto;
           background: #ffffff;
-          padding: 150px 0 80px 0;
-          gap: 35px;
+          padding: 100px 0 40px 0;
+          gap: 20px;
           align-items: center;
           z-index: 1000;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+        ul.mobile-open li:first-child {
+          padding-top: 20px;
+        }
+        ul.mobile-open li:last-child {
+          padding-bottom: 20px;
         }
         ul.mobile-open a {
           color: #1a1a1a;
@@ -154,7 +164,7 @@ export default function Navbar() {
         button {
           position: absolute;
           right: 20px;
-          top: 20px;
+          top: 0px;
           font-size: 24px;
           background: none;
           border: none;
@@ -192,7 +202,7 @@ const styles = {
   hamburger: {
     position: 'absolute' as const,
     right: 20,
-    top: 20,
+    top: 10,
     fontSize: 24,
     background: 'none',
     border: 'none',
