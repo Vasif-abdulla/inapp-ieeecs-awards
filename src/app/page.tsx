@@ -11,7 +11,7 @@ export default function Home() {
               <img src="/inapp-logo12.png" alt="InApp Logo" style={styles.inappLogo} className="inapp-logo"/>
             </div> */}
           <div style={styles.logoContainer}>
-            <img src="/logo1.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo" />
+            <img src="/logo3.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo" />
           </div>
         </div>
 
