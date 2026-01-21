@@ -17,8 +17,8 @@
   }
 
   .ieeecslogo {
-    max-width: 141% !important;
-    max-height: 131px !important;
+    max-width: 100% !important;
+    max-height: 80px !important;
   }
 
   h1.responsiveHeading {
