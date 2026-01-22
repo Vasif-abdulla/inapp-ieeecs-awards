@@ -11,7 +11,7 @@ export default function Home() {
               <img src="/inapp-logo12.png" alt="InApp Logo" style={styles.inappLogo} className="inapp-logo"/>
             </div> */}
           <div style={styles.logoContainer}>
-            <img src="/logo3.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo" />
+            <img src="/logo4.png" alt="IEEE CS Logo" style={styles.inappLogo} className="ieeecslogo" />
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
               <div style={styles.aboutCardContent}>
                 <h3 style={styles.aboutCardTitle}>IEEE Computer Society</h3>
                 <p style={styles.aboutCardText}>
-                  The IEEE Computer Society (CS) Kerala Chapter, founded in 1985, is the world’s largest Computer Society Chapter, with 48 Student Branch Chapters and over 2,400 members as of 2025. Renowned for encouraging innovation in computer science and engineering, it organizes flagship events like AKCSSC and AICSSYC-23.                </p>
+                  The IEEE Computer Society (CS) Kerala Chapter, founded in 1985, is the world’s largest Computer Society Chapter, with 48 Student Branch Chapters and over 4060 members as of 2026. Renowned for encouraging innovation in computer science and engineering, it organizes flagship events like AKCSSC and AICSSYC-23.                </p>
                 <p style={styles.aboutCardText}>
                   Its success is powered by dedicated volunteers whose leadership has earned recognitions such as the IEEE CS (Global) Outstanding Chapter Award (2018), Early Career Professionals Engagement Award (2022), and the IEEE Kerala Section’s Outstanding Large Society Chapter Award (2023). With a commitment to excellence, the Chapter inspires collaboration and meaningful change in technology.                      </p>
               </div>
@@ -125,10 +125,10 @@ export default function Home() {
                 The InApp Student Project Awards have a longstanding tradition of encouraging innovation and recognising excellence in software development among students. Since its inception, the Awards have provided a platform for young developers to showcase their skills and creative solutions to real-world problems.
               </p>
               <p style={styles.historyParagraph} className="history-paragraph">
-                Until the previous year, the Awards were organised in partnership with the Computer Society of India (CSI). The projects were evaluated by a distinguished panel of industry pioneers, ensuring that the best and most innovative solutions received the recognition they deserved.
+                Until 2024, the Awards were organised in partnership with the Computer Society of India (CSI). The projects were evaluated by a distinguished panel of industry pioneers, ensuring that the best and most innovative solutions received the recognition they deserved.
               </p>
               <p style={styles.historyParagraph} className="history-paragraph">
-                This year’s edition marks a significant milestone for the Awards, with a new partnership formed with the IEEE Computer Society Kerala Chapter. Building on the success of previous editions, the InApp - IEEE CS Student Project Awards continues the mission to celebrate and nurture the talent of aspiring technocrats. This edition remains committed to encouraging students to push their boundaries, innovate, and make a lasting impact in the digital world.
+                Building on the success of previous editions, the InApp - IEEE CS Student Project Awards continues the mission to celebrate and nurture the talent of aspiring technocrats. This edition remains committed to encouraging students to push their boundaries, innovate, and make a lasting impact in the digital world.
               </p>
               {/* <div style={styles.historyLink} className="history-link">
                 <a href="#" style={styles.linkButton} className="history-link-btn">
@@ -340,8 +340,8 @@ const styles = {
     objectFit: 'contain',
   } as React.CSSProperties,
   inappLogo: {
-    maxWidth: '320%',
-    maxHeight: '320%',
+    maxWidth: '150%',
+    maxHeight: '150%',
 
     objectFit: 'contain',
   } as React.CSSProperties,

@@ -6,12 +6,12 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const images = [
   {
     src: '/slide1.JPG',
-    alt: 'IEEE CS Awards Ceremony',
+    alt: 'Award Winners',
     caption: 'Celebrating Innovation and Excellence'
   },
   {
-    src: '/slide2.jpeg',
-    alt: 'Student Projects Showcase',
+    src: '/slide2.JPG',
+    alt: 'Award Runners Up',
     caption: 'Showcasing Student Projects'
   },
   {
