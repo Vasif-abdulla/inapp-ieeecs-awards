@@ -21,7 +21,7 @@ export default function Home() {
         <p style={styles.subheading} className="responsiveSubheading">Inspiring New Solutions, Propelling Innovation, Realizing Excellence</p>
 
         <a
-          href=""
+          href="https://docs.google.com/forms/d/1rnZ4PH88wnwnGOi1mXGsWjleAslTBsuneb8WkneMZb0/edit?ts=6964c217"
           target="_blank"
           rel="noopener noreferrer"
           className="apply-button"
@@ -103,7 +103,7 @@ export default function Home() {
           <div style={styles.historyContent} className="history-content">
             <div style={styles.historyStats} className="history-stats">
               <div style={styles.statCard}>
-                <h3 style={styles.statNumber}>14</h3>
+                <h3 style={styles.statNumber}>15</h3>
                 <p style={styles.statLabel}>Years of Awards</p>
               </div>
               <div style={styles.statCard}>
@@ -227,38 +227,32 @@ export default function Home() {
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>Call for Abstracts</h4>
-                    <p style={styles.timelineDate}>Coming Soon</p>
+                    <h4 style={styles.timelineEventTitle}>Registration Deadline</h4>
+                    <p style={styles.timelineDate}>February 15th</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>Submission Deadline</h4>
-                    <p style={styles.timelineDate}>Coming Soon</p>
+                    <h4 style={styles.timelineEventTitle}>First Round Evaluation</h4>
+                    <p style={styles.timelineDate}>February</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>Initial Evaluation & Scrutiny</h4>
-                    <p style={styles.timelineDate}>Coming Soon</p>
+                    <h4 style={styles.timelineEventTitle}>Second Round Evaluation</h4>
+                    <p style={styles.timelineDate}>March</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>⁠Final Evaluation</h4>
-                    <p style={styles.timelineDate}>Coming Soon</p>
+                    <h4 style={styles.timelineEventTitle}>Final Round Evaluation</h4>
+                    <p style={styles.timelineDate}>April</p>
                   </div>
                 </div>
-                <div style={styles.timelineItem}>
-                  <div style={styles.timelineDot}></div>
-                  <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>Result Announcement</h4>
-                    <p style={styles.timelineDate}>Coming Soon</p>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -295,11 +289,11 @@ export default function Home() {
                 </div>
                 <div style={styles.contactItem}>
                   <Phone size={18} color="#CC232E" />
-                  <span style={styles.contactText}>+91 86061 64747</span>
+                  <span style={styles.contactText}>+91 9446230863</span>
                 </div>
                 <div style={styles.contactItem}>
                   <Phone size={18} color="#CC232E" />
-                  <span style={styles.contactText}>+91 73560 47629</span>
+                  <span style={styles.contactText}>+91 8078156138</span>
                 </div>
               </div>
             </div>
@@ -621,17 +615,18 @@ const styles = {
     margin: 0,
   },
   bonusCard: {
-    backgroundColor: '#CC232E',
-    color: 'white',
+    backgroundColor: 'rgba(204, 35, 46, 0.1)',
+    color: '#CC232E',
     padding: '1.5rem',
     borderRadius: '15px',
     textAlign: 'center' as const,
-    boxShadow: '0 8px 25px rgba(204, 35, 46, 0.3)',
+    boxShadow: '0 8px 25px rgba(204, 35, 46, 0.1)',
     border: '2px solid #CC232E',
   },
   bonusText: {
     margin: 0,
     fontSize: '1rem',
+    fontWeight: '600',
   },
 
   // Timeline
