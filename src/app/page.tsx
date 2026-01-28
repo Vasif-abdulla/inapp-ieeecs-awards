@@ -78,9 +78,10 @@ export default function Home() {
               <div style={styles.aboutCardContent}>
                 <h3 style={styles.aboutCardTitle}>IEEE Computer Society</h3>
                 <p style={styles.aboutCardText}>
-                  The IEEE Computer Society (CS) Kerala Chapter, founded in 1985, is the world’s largest Computer Society Chapter, with 48 Student Branch Chapters and over 4060 members as of 2026. Renowned for encouraging innovation in computer science and engineering, it organizes flagship events like AKCSSC and AICSSYC-23.                </p>
+                  The IEEE Computer Society (CS) Kerala Chapter, established in 1985, marks a 40-year legacy of excellence as the world’s largest Computer Society Chapter. With 48 Student Branch Chapters and over 4,060 members as of 2026, the Chapter has played a significant role in advancing computer science and engineering.</p>
                 <p style={styles.aboutCardText}>
-                  Its success is powered by dedicated volunteers whose leadership has earned recognitions such as the IEEE CS (Global) Outstanding Chapter Award (2018), Early Career Professionals Engagement Award (2022), and the IEEE Kerala Section’s Outstanding Large Society Chapter Award (2023). With a commitment to excellence, the Chapter inspires collaboration and meaningful change in technology.                      </p>
+It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is driven by committed volunteers whose leadership has earned prestigious recognitions, including the IEEE CS (Global) Outstanding Chapter Award (2018), the Early Career Professionals Engagement Award (2022), and the IEEE Kerala Section Outstanding Large Society Chapter Award (2023).
+</p>
               </div>
             </div>
 

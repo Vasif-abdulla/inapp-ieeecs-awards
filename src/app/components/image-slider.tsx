@@ -15,7 +15,7 @@ const images = [
     caption: 'Showcasing Student Projects'
   },
   {
-    src: '/slide3.JPG',
+    src: '/slide3.png',
     alt: 'Award Winners',
     caption: 'Inspiring the Next Generation of Innovators'
   }
