@@ -92,11 +92,11 @@ export default function Navbar() {
           backgroundColor: isMobile ? '#ffffff' : 'transparent',
         }}
       >
-        <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-        <li><Link href="/#about" onClick={() => setMenuOpen(false)}>About</Link></li>
-        <li><Link href="/#history" onClick={() => setMenuOpen(false)}>History</Link></li>
-        <li><Link href="/#awards" onClick={() => setMenuOpen(false)}>Awards</Link></li>
-        <li><Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+        <li><Link href="/" onClick={() => setMenuOpen(false)} style={{ color: scrolled ? 'black' : 'white', fontWeight: '700', textDecoration: 'none' }}>Home</Link></li>
+        <li><Link href="/#about" onClick={() => setMenuOpen(false)} style={{ color: scrolled ? 'black' : 'white', fontWeight: '700', textDecoration: 'none' }}>About</Link></li>
+        <li><Link href="/#history" onClick={() => setMenuOpen(false)} style={{ color: scrolled ? 'black' : 'white', fontWeight: '700', textDecoration: 'none' }}>History</Link></li>
+        <li><Link href="/#awards" onClick={() => setMenuOpen(false)} style={{ color: scrolled ? 'black' : 'white', fontWeight: '700', textDecoration: 'none' }}>Awards</Link></li>
+        <li><Link href="/#contact" onClick={() => setMenuOpen(false)} style={{ color: scrolled ? 'black' : 'white', fontWeight: '700', textDecoration: 'none' }}>Contact</Link></li>
       </ul>
 
       <style jsx>{`
@@ -118,10 +118,10 @@ export default function Navbar() {
         }
         ul.desktop-menu a {
           color: ${scrolled ? 'black' : 'white'};
-          font-weight: 600;
+          font-weight: 700;
           font-size: 1.2rem;
           transition: color 0.3s ease;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+          text-shadow: ${scrolled ? 'none' : '2px 2px 4px rgba(0,0,0,0.3)'};
         }
         ul.desktop-menu a:hover {
           color: #CC232E;

@@ -20,14 +20,9 @@ export default function Home() {
         <h1 style={styles.heading} className="responsiveHeading">InApp - IEEE CS STUDENT PROJECT AWARDS</h1>
         <p style={styles.subheading} className="responsiveSubheading">Inspiring New Solutions, Propelling Innovation, Realizing Excellence</p>
 
-        <a
-          href="https://docs.google.com/forms/d/1rnZ4PH88wnwnGOi1mXGsWjleAslTBsuneb8WkneMZb0/edit?ts=6964c217"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="apply-button"
-        >
-          Apply Now
-        </a>
+        <div className="submissions-closed">
+          Submissions Closed
+        </div>
 
       </section>
 
@@ -80,8 +75,8 @@ export default function Home() {
                 <p style={styles.aboutCardText}>
                   The IEEE Computer Society (CS) Kerala Chapter, established in 1985, marks a 40-year legacy of excellence as the world’s largest Computer Society Chapter. With 48 Student Branch Chapters and over 4,060 members as of 2026, the Chapter has played a significant role in advancing computer science and engineering.</p>
                 <p style={styles.aboutCardText}>
-It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is driven by committed volunteers whose leadership has earned prestigious recognitions, including the IEEE CS (Global) Outstanding Chapter Award (2018), the Early Career Professionals Engagement Award (2022), and the IEEE Kerala Section Outstanding Large Society Chapter Award (2023).
-</p>
+                  It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is driven by committed volunteers whose leadership has earned prestigious recognitions, including the IEEE CS (Global) Outstanding Chapter Award (2018), the Early Career Professionals Engagement Award (2022), and the IEEE Kerala Section Outstanding Large Society Chapter Award (2023).
+                </p>
               </div>
             </div>
 
@@ -171,7 +166,7 @@ It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is dr
                   Project teams retain full ownership of all intellectual property rights in their submissions. By entering, each team grants the organizers a non‑exclusive, royalty‑free, perpetual license to reproduce and display submission materials for non‑commercial promotional and marketing purposes only. No other rights - including commercialization, sublicensing, or modification - are conveyed.</p>
 
                 <p><strong>4. General</strong><br />
-                  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition.</p>
+                  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition.The Organizing Committee reserves the right to modify, amend, or cancel any aspect of the competition at its sole discretion, including but not limited to timelines, evaluation criteria, judging panels, shortlisting processes, and award structures, without prior notice.</p>
 
 
               </div>
@@ -208,11 +203,9 @@ It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is dr
                 </div>
 
 
-                <div style={styles.bonusCard}>
-                  <p style={styles.bonusText}>
-                    Placement Opportunity for All Winners
-                  </p>
-                </div>
+                <p style={styles.bonusText}>
+                  Placement Opportunity for All Winners
+                </p>
 
               </div>
             </div>
@@ -228,29 +221,36 @@ It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is dr
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>Registration Deadline</h4>
-                    <p style={styles.timelineDate}>February 15th</p>
+                    <h4 style={styles.timelineEventTitle}>Registration Begins</h4>
+                    <p style={styles.timelineDate}>January 31st, 2026</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
-                    <h4 style={styles.timelineEventTitle}>First Round Evaluation</h4>
-                    <p style={styles.timelineDate}>February</p>
+                    <h4 style={styles.timelineEventTitle}>Registration Deadline</h4>
+                    <p style={styles.timelineDate}>February 20th, 2026</p>
+                  </div>
+                </div>
+                <div style={styles.timelineItem}>
+                  <div style={styles.timelineDot}></div>
+                  <div style={styles.timelineInfo}>
+                    <h4 style={styles.timelineEventTitle}>First Round Evaluation Results</h4>
+                    <p style={styles.timelineDate}>Second week of March</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
                     <h4 style={styles.timelineEventTitle}>Second Round Evaluation</h4>
-                    <p style={styles.timelineDate}>March</p>
+                    <p style={styles.timelineDate}>March (tentative)</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
                     <h4 style={styles.timelineEventTitle}>Final Round Evaluation</h4>
-                    <p style={styles.timelineDate}>April</p>
+                    <p style={styles.timelineDate}>April (tentative)</p>
                   </div>
                 </div>
 
@@ -303,7 +303,7 @@ It organizes flagship events such as AKCSSC and AICSSYC-23, and its impact is dr
       </section>
 
       <footer style={styles.footer}>
-        <p>©️2026 InApp - IEEE CS Student Project Awards. All rights reserved.</p>
+        <p>©2026 InApp - IEEE CS Student Project Awards. All rights reserved.</p>
       </footer>
     </div>
 
@@ -407,9 +407,9 @@ const styles = {
     display: 'inline-block',
     backgroundColor: '#CC232E',
     color: 'white',
-    padding: '8px 24px',
+    padding: '8px 40px',
     borderRadius: '50px',
-    fontSize: '1.9rem',
+    fontSize: '1.4rem',
     fontWeight: '600',
     textTransform: 'uppercase' as const,
     letterSpacing: '1px',
@@ -625,9 +625,11 @@ const styles = {
     border: '2px solid #CC232E',
   },
   bonusText: {
-    margin: 0,
-    fontSize: '1rem',
-    fontWeight: '600',
+    margin: '1rem 0 0 0',
+    fontSize: '0.9rem',
+    fontWeight: '400',
+    color: '#666',
+    textAlign: 'center' as const,
   },
 
   // Timeline

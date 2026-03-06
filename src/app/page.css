@@ -57,7 +57,7 @@
   background-color: #ffffff;
   color: #000000;
   padding: 16px 40px;
-  border-radius: 8px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -68,9 +68,22 @@
 }
 
 /* Apply Now Button Hover */
-.apply-button:hover {
+.apply-button:not([style*="cursor: default"]):hover {
   background-color: #CC232E !important;
   color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(204, 35, 46, 0.4) !important;
+}
+
+/* Submissions Closed Button - No Hover Effects */
+.submissions-closed {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  cursor: default;
 }
