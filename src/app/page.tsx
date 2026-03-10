@@ -166,7 +166,7 @@ export default function Home() {
                   Project teams retain full ownership of all intellectual property rights in their submissions. By entering, each team grants the organizers a non‑exclusive, royalty‑free, perpetual license to reproduce and display submission materials for non‑commercial promotional and marketing purposes only. No other rights - including commercialization, sublicensing, or modification - are conveyed.</p>
 
                 <p><strong>4. General</strong><br />
-                  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition.The Organizing Committee reserves the right to modify, amend, or cancel any aspect of the competition at its sole discretion, including but not limited to timelines, evaluation criteria, judging panels, shortlisting processes, and award structures, without prior notice.</p>
+                  Submission of an application signifies each team member’s acceptance of these Terms and Conditions. The Organizing Committee is not liable for technical disruptions, delays, omissions, or force majeure events that may affect the competition. The Organizing Committee reserves the right to modify, amend, or cancel any aspect of the competition at its sole discretion, including but not limited to timelines, evaluation criteria, judging panels, shortlisting processes, and award structures, without prior notice.</p>
 
 
               </div>
