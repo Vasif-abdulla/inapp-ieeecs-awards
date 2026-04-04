@@ -236,21 +236,21 @@ export default function Home() {
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
                     <h4 style={styles.timelineEventTitle}>First Round Evaluation Results</h4>
-                    <p style={styles.timelineDate}>Second week of March</p>
+                    <p style={styles.timelineDate}>Second week of April</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
                     <h4 style={styles.timelineEventTitle}>Second Round Evaluation</h4>
-                    <p style={styles.timelineDate}>March (tentative)</p>
+                    <p style={styles.timelineDate}>April (tentative)</p>
                   </div>
                 </div>
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDot}></div>
                   <div style={styles.timelineInfo}>
                     <h4 style={styles.timelineEventTitle}>Final Round Evaluation</h4>
-                    <p style={styles.timelineDate}>April (tentative)</p>
+                    <p style={styles.timelineDate}>May (tentative)</p>
                   </div>
                 </div>
 
